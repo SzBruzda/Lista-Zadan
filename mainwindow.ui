@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>717</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: #111;
+}</string>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>22</y>
+      <width>641</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="topMargin">
+        <number>50</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border: none;
+	background-color: #ddd;
+	padding: 7px;
+	border: 1px solid #aaa;
+}
+
+QPushButton:hover{
+	background-color:#ccc;
+}
+
+QPushButton:pressed{
+	margin: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>wszystkie</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border: none;
+	background-color: #ddd;
+	padding: 7px;
+	border: 1px solid #aaa;
+}
+
+QPushButton:hover{
+	background-color:#ccc;
+}
+
+QPushButton:pressed{
+	margin: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>7 dni</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border: none;
+	background-color: #ddd;
+	padding: 7px;
+	border: 1px solid #aaa;
+}
+
+QPushButton:hover{
+	background-color:#ccc;
+}
+
+QPushButton:pressed{
+	margin: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>miesiąc</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border: none;
+	background-color: #ddd;
+	padding: 7px;
+	border: 1px solid #aaa;
+}
+
+QPushButton:hover{
+	background-color:#ccc;
+}
+
+QPushButton:pressed{
+	margin: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>dom</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border: none;
+	background-color: #ddd;
+	padding: 7px;
+	border: 1px solid #aaa;
+}
+
+QPushButton:hover{
+	background-color:#ccc;
+}
+
+QPushButton:pressed{
+	margin: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>praca</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border: none;
+	background-color: #ddd;
+	padding: 7px;
+	border: 1px solid #aaa;
+}
+
+QPushButton:hover{
+	background-color:#ccc;
+}
+
+QPushButton:pressed{
+	margin: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>zakupy</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border: none;
+	background-color: #ddd;
+	padding: 7px;
+	border: 1px solid #aaa;
+}
+
+QPushButton:hover{
+	background-color:#ccc;
+}
+
+QPushButton:pressed{
+	margin: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>ogolne</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="add_button">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border: none;
+	background-color: #ddd;
+	padding: 7px;
+	border: 1px solid #aaa;
+}
+
+QPushButton:hover{
+	background-color:#ccc;
+}
+
+QPushButton:pressed{
+	margin:1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Dodaj zadanie.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="add_widget">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>250</height>
+          </size>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::ClickFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <widget class="QWidget" name="page">
+          <widget class="QSplitter" name="splitter">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>20</y>
+             <width>578</width>
+             <height>234</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QTextEdit" name="task_text">
+                 <property name="styleSheet">
+                  <string notr="true">QTextEdit{
+	border: 1px solid rgb(0, 85, 255);
+	margin: 5px;
+	background-color: #333;
+	color: #eee;
+}</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <widget class="QRadioButton" name="task_home">
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	color: #eee;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Dom</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="task_job">
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	color: #eee;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Praca</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="task_shop">
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	color: #eee;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Zakupy</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="task_default">
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	color: #eee;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Ogólne</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QCalendarWidget" name="task_calendar">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QCalendarWidget QAbstractItemView
+{
+background-color: #eee; 
+selection-background-color: yellow; 
+selection-color: #111;
+} </string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="task_confirme">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	border-radius: 3px;
+	border: none;
+	background-color:rgba(170, 0, 0, 0.7);
+	color: #fff;
+	padding: 0 15px;
+}
+QPushButton:hover{
+	background-color:rgba(170, 0, 0,1);
+}
+
+QPushButton:pressed{
+	margin: 3px;
+}</string>
+            </property>
+            <property name="text">
+             <string>Dodaj!</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_2"/>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QListWidget" name="listWidget">
+           <property name="styleSheet">
+            <string notr="true">QListWidget{
+background-color: #333;
+color: #222;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listWidget_date">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QListWidget{
+background-color: #333;
+color: #222;
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>660</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionDodaj_zadanie"/>
+    <addaction name="actionZapisz"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionZapisz">
+   <property name="text">
+    <string>Zapisz</string>
+   </property>
+  </action>
+  <action name="actionDodaj_zadanie">
+   <property name="text">
+    <string>Dodaj zadanie</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
